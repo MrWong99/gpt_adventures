@@ -80,3 +80,23 @@ Provide your next JSON-Action followed by a description for its reasoning.
 Reasoning:
 Now that I have found the kitchen items, including dirty dishes, I will focus on cleaning them up. This action will help me achieve my short-term goal of cleaning up the kitchen and maintaining a tidy and organized living environment.
 ```
+
+## Error Handling
+
+If the AI tries to perform an unknown or disallowed action you can tell it in an event:
+
+```
+{
+"INPUTS": {
+"L_GOAL": "create an online business in programming",
+"S_GOALS": "visit grandma Maria next Sunday, clean up kitchen",
+"ENV": "stove, fridge, kitchen table, dirty dishes, sink, various kitchen items in drawers",
+"EVENT": "performing last JSON-Action failed because: you can't talk to grandma Maria as she is not close enough to you right now",
+"NEEDS": "",
+"MEMORIES": "during your last year of school you have been harassed by a stalker that called your phone almost every day, your grandma Maria raised you like a mother after your mother died when you were 6 years old"
+}
+}
+
+
+Provide your next JSON-Action followed by a description for its reasoning.
+```
