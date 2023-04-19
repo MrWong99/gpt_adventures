@@ -9,7 +9,7 @@ gpt_adventures uses GitHub to manage reviews of pull requests:
 ## Steps to contribute
 
 Unfortunately since this project almost entirely relies on (Chat)GPT and other OpenAI Tools you should setup an account and API Token so you can [use the OpenAI API](https://platform.openai.com/docs/introduction).
-**USAGE OF THIS API COSTS MONEY!** I suggest to setup resonable [usage limits](https://platform.openai.com/account/billing/limits) this project tryies to minimze the costs as much as possible though 
+**USAGE OF THIS API COSTS MONEY!** I suggest to setup resonable [usage limits](https://platform.openai.com/account/billing/limits) but still this project tries to minimze the costs as much as possible though.
 Also if you don't have access to the GPT-4 model via the API yet (this is separate from ChatGPT Plus) then I suggest using ChatGPT Plus manually instead.
 
 1. Fork the repository on GitHub
