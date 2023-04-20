@@ -6,7 +6,7 @@ This project is heavily inspired by the paper [Generative Agents: Interactive Si
    - 100% free interaction with the game world by letting agents map the users intent (natural language) to the game objects
 2. Easy integration of all agents into any game engine or programming language. This is done by strictly inputting and outputting JSON-Objects to and from the agents.
 3. **YOU** can be a part in this world with your own character.
-4. **MULTIPLAYER** with PwPwA (Player with Player with Agent).
+4. **MULTIPLAYER** with PwPwA (Player with Player with Agent, and yes the Bad pun ist intedend and with because collaboration and so on).
 
 This is a huge project and I am currently working on the first steps to make this a reality. If you are interested in this project, please feel free to **[COLLABORATE](/CONTRIBUTING.md)**.
 
