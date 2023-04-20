@@ -1,6 +1,6 @@
 # Deep and Generative Games Managed by GPT-4
 
-This project is heavily inspired by the paper [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2106.03374) but strives to go beyond the original paper in several ways:
+This project is heavily inspired by the paper [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf) but strives to go beyond the original paper in several ways:
 1. The original paper focuses on AI managed agents to control a game character in the world. This project aims to also include the game world itself as a managed agent by various means:
    - On-the-fly creation of new game objects including their finite-state machines and pixel art
    - 100% free interaction with the game world by letting agents map the users intent (natural language) to the game objects
