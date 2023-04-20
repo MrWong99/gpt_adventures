@@ -27,16 +27,20 @@ You must enrich this input with a Finite-state machine and output it in this JSO
 "S_1_TRANSITIONS": {
 "T_S_1": "the target state of the first transition starting at the first available state",
 "T_1_NAME": "the name of the first transition operation for the first state",
+"T_1_REQUIREMENT": "one or many optionally required objects that would be needed to perform the second transition",
 "T_S_2": "the target state of the second transition starting at the first available state",
 "T_2_NAME": "the name of the second transition operation for the first state",
+"T_2_REQUIREMENT": "one or many optionally required objects that would be needed to perform the second transition",
 ...
 },
 "S_2": "the second available state",
 "S_2_TRANSITIONS": {
 "T_S_1": "the target state of the first transition starting at the second available state",
 "T_1_NAME": "the name of the first transition operation for the second state",
+"T_1_REQUIREMENT": "one or many optionally required objects that would be needed to perform the second transition",
 "T_S_2": "the target state of the second transition starting at the first available state",
 "T_2_NAME": "the name of the second transition operation for the second state",
+"T_2_REQUIREMENT": "one or many optionally required objects that would be needed to perform the second transition",
 ...
 },
 ...
@@ -52,7 +56,8 @@ For example:
 "S_1": "OPENED",
 "S_1_TRANSITIONS": {
 "T_S_1": "CLOSED_UNLOCKED",
-"T_1_NAME": "close"
+"T_1_NAME": "close",
+"T_1_REQUIREMENT": ""
 },
 "S_2": "CLOSED_UNLOCKED",
 "S_2_TRANSITIONS": {
@@ -60,20 +65,20 @@ For example:
 "T_1_NAME": "open",
 "T_S_2": "CLOSED_LOCKED",
 "T_2_NAME": "lock",
-"T_S_3": "BROKEN",
-"T_3_NAME": "destroy"
+"T_2_REQUIREMENT": "key"
 },
 "S_3": "CLOSED_LOCKED",
 "S_3_TRANSITIONS": {
 "T_S_1": "CLOSED_UNLOCKED",
 "T_1_NAME": "unlock",
-"T_S_2": "BROKEN",
-"T_2_NAME": "destroy"
+"T_1_REQUIREMENT": "key"
 },
 "S_3": "BROKEN",
 "S_3_TRANSITIONS": {
 "T_S_1": "OPEN",
-"T_1_NAME": "repair"
+"T_1_NAME": "repair",
+"T_1_REQUIREMENT": "repair kit and WD40 spray"
+}
 }
 }
 ```
@@ -104,19 +109,23 @@ Provide the fitting JSON-Output response that now has a Finite-state machine.
 "S_1": "OFF",
 "S_1_TRANSITIONS": {
 "T_S_1": "ON",
-"T_1_NAME": "turn_on"
+"T_1_NAME": "turn on",
+"T_1_REQUIREMENT": "water supply and functional faucet"
 },
 "S_2": "ON",
 "S_2_TRANSITIONS": {
 "T_S_1": "OFF",
-"T_1_NAME": "turn_off",
-"T_S_2": "IN_USE",
-"T_2_NAME": "use"
+"T_1_NAME": "turn off",
+"T_1_REQUIREMENT": "",
+"T_S_2": "BROKEN",
+"T_2_NAME": "break",
+"T_2_REQUIREMENT": "heavy object"
 },
-"S_3": "IN_USE",
+"S_3": "BROKEN",
 "S_3_TRANSITIONS": {
-"T_S_1": "ON",
-"T_1_NAME": "stop_using"
+"T_S_1": "OFF",
+"T_1_NAME": "repair",
+"T_1_REQUIREMENT": "plumber and replacement parts"
 }
 }
 }
